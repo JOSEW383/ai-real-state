@@ -1,0 +1,6 @@
+[submodule "airs-back"]
+	path = airs-back
+	url = https://github.com/JOSEW383/airs-back.git
+[submodule "airs-front"]
+	path = airs-front
+	url = https://github.com/JOSEW383/airs-front.git

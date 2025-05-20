@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./airs-back
+    container_name: airs-back
+    ports:
+      - "50014:3000"
+    env_file:
+      - ./airs-back/.env
+
+  frontend:
+    build: ./airs-front
+    container_name: airs-front
+    ports:
+      - "50015:4173"
+    depends_on:
+      - backend
